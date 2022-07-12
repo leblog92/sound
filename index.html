@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Sound Board</title>
+</head>
+<body>
+<button id="garcimore">Ça marche pas</button>
+<button id="ivanohe">Ivanohé !</button>
+<script>
+
+var audio_garcimore=new Audio("garcimore.mp3");
+var audio_ivanohe=new Audio("ivanohe.mp3");
+
+document.getElementById("garcimore").addEventListener("click",play_garcimore);
+document.getElementById("ivanohe").addEventListener("click",play_ivanohe);
+
+function play_garcimore(){
+	audio_garcimore.play();
+}
+
+function play_ivanohe(){
+	audio_ivanohe.play();
+}
+</script>
+</body>
+</html>
